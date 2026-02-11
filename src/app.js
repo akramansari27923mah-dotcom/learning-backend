@@ -10,7 +10,7 @@ app.post('/notes', (req, res) => {
     notes.push(req.body)
 
     res.status(200).json({
-        message : 'node created successfully'
+        message : 'notes created successfully'
     })
 })
 
@@ -18,7 +18,7 @@ app.post('/notes', (req, res) => {
 app.get('/notes', (req, res) => {
 
     res.status(200).json({
-        message : 'node fatch successfully',
+        message : 'notes fatched successfully',
         notes : notes
     })
 
