@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const connectDB = async() => {
-    await mongoose.connect('mongodb+srv://learning-backend:hxsEY2OBBPjxg9u6@learn-backend.d83fkbx.mongodb.net/learn-db')
+    await mongoose.connect(process.env.MONGO_URI)
 
     console.log('connected to db');
     
